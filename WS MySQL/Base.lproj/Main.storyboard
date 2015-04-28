@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="567" y="270"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Screen View Controller-->
         <scene sceneID="uml-G6-GB7">
             <objects>
-                <viewController id="Ijp-Mg-mE0" sceneMemberID="viewController">
+                <viewController id="Ijp-Mg-mE0" customClass="LoginScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sZW-UG-Da9"/>
                         <viewControllerLayoutGuide type="bottom" id="gMC-KT-dMg"/>
@@ -240,19 +240,28 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginActionCall:" destination="Ijp-Mg-mE0" eventType="touchUpInside" id="kXs-jm-TMb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="passTextField" destination="3Ov-gg-GzA" id="YAF-gh-rpL"/>
+                        <outlet property="userTextField" destination="3pk-Zy-SCQ" id="Zni-if-KNe"/>
+                        <segue destination="0md-Zu-K9I" kind="modal" identifier="login_success" id="nHH-nn-F5e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXt-jX-9MD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="912"/>
+            <point key="canvasLocation" x="-282" y="270"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YXO-s1-88K">
             <objects>
                 <navigationController id="0md-Zu-K9I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="162-vy-hxC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fPR-Ge-8fm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

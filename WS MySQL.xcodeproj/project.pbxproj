@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C210A2BD1AEF3A7800D0D380 /* LoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C210A2BC1AEF3A7800D0D380 /* LoginScreenViewController.m */; };
 		C23175E01AE474D60012E771 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175DF1AE474D60012E771 /* HomeModel.m */; };
 		C23175E31AE475130012E771 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175E21AE475130012E771 /* Location.m */; };
 		C23175E81AE475360012E771 /* NewReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175E51AE475360012E771 /* NewReportViewController.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C210A2BB1AEF3A7800D0D380 /* LoginScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginScreenViewController.h; sourceTree = "<group>"; };
+		C210A2BC1AEF3A7800D0D380 /* LoginScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginScreenViewController.m; sourceTree = "<group>"; };
 		C23175DE1AE474D60012E771 /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		C23175DF1AE474D60012E771 /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		C23175E11AE475130012E771 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				C23175E61AE475360012E771 /* protoCellTableViewCell.h */,
 				C23175E71AE475360012E771 /* protoCellTableViewCell.m */,
 				C29B0A301ACDEBCE0079B1B8 /* Main.storyboard */,
+				C210A2BB1AEF3A7800D0D380 /* LoginScreenViewController.h */,
+				C210A2BC1AEF3A7800D0D380 /* LoginScreenViewController.m */,
 				C29B0A331ACDEBCE0079B1B8 /* Images.xcassets */,
 				C29B0A351ACDEBCE0079B1B8 /* LaunchScreen.xib */,
 				C29B0A261ACDEBCE0079B1B8 /* Supporting Files */,
@@ -249,6 +254,7 @@
 				C23175E81AE475360012E771 /* NewReportViewController.m in Sources */,
 				C23175E31AE475130012E771 /* Location.m in Sources */,
 				C29B0A2F1ACDEBCE0079B1B8 /* ViewController.m in Sources */,
+				C210A2BD1AEF3A7800D0D380 /* LoginScreenViewController.m in Sources */,
 				C23175EC1AE475500012E771 /* ReportsTableViewController.m in Sources */,
 				C29B0A2C1ACDEBCE0079B1B8 /* AppDelegate.m in Sources */,
 				C29B0A291ACDEBCE0079B1B8 /* main.m in Sources */,
