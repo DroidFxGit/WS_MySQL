@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23175E01AE474D60012E771 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175DF1AE474D60012E771 /* HomeModel.m */; };
+		C23175E31AE475130012E771 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175E21AE475130012E771 /* Location.m */; };
+		C23175E81AE475360012E771 /* NewReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175E51AE475360012E771 /* NewReportViewController.m */; };
+		C23175E91AE475360012E771 /* protoCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175E71AE475360012E771 /* protoCellTableViewCell.m */; };
+		C23175EC1AE475500012E771 /* ReportsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175EB1AE475500012E771 /* ReportsTableViewController.m */; };
 		C29B0A291ACDEBCE0079B1B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B0A281ACDEBCE0079B1B8 /* main.m */; };
 		C29B0A2C1ACDEBCE0079B1B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B0A2B1ACDEBCE0079B1B8 /* AppDelegate.m */; };
 		C29B0A2F1ACDEBCE0079B1B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B0A2E1ACDEBCE0079B1B8 /* ViewController.m */; };
@@ -27,6 +32,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C23175DE1AE474D60012E771 /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		C23175DF1AE474D60012E771 /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		C23175E11AE475130012E771 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		C23175E21AE475130012E771 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		C23175E41AE475360012E771 /* NewReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewReportViewController.h; sourceTree = "<group>"; };
+		C23175E51AE475360012E771 /* NewReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewReportViewController.m; sourceTree = "<group>"; };
+		C23175E61AE475360012E771 /* protoCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = protoCellTableViewCell.h; sourceTree = "<group>"; };
+		C23175E71AE475360012E771 /* protoCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = protoCellTableViewCell.m; sourceTree = "<group>"; };
+		C23175EA1AE475500012E771 /* ReportsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportsTableViewController.h; sourceTree = "<group>"; };
+		C23175EB1AE475500012E771 /* ReportsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportsTableViewController.m; sourceTree = "<group>"; };
 		C29B0A231ACDEBCE0079B1B8 /* WS MySQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WS MySQL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29B0A271ACDEBCE0079B1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C29B0A281ACDEBCE0079B1B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,8 +98,18 @@
 			children = (
 				C29B0A2A1ACDEBCE0079B1B8 /* AppDelegate.h */,
 				C29B0A2B1ACDEBCE0079B1B8 /* AppDelegate.m */,
+				C23175DE1AE474D60012E771 /* HomeModel.h */,
+				C23175DF1AE474D60012E771 /* HomeModel.m */,
+				C23175E11AE475130012E771 /* Location.h */,
+				C23175E21AE475130012E771 /* Location.m */,
 				C29B0A2D1ACDEBCE0079B1B8 /* ViewController.h */,
 				C29B0A2E1ACDEBCE0079B1B8 /* ViewController.m */,
+				C23175EA1AE475500012E771 /* ReportsTableViewController.h */,
+				C23175EB1AE475500012E771 /* ReportsTableViewController.m */,
+				C23175E41AE475360012E771 /* NewReportViewController.h */,
+				C23175E51AE475360012E771 /* NewReportViewController.m */,
+				C23175E61AE475360012E771 /* protoCellTableViewCell.h */,
+				C23175E71AE475360012E771 /* protoCellTableViewCell.m */,
 				C29B0A301ACDEBCE0079B1B8 /* Main.storyboard */,
 				C29B0A331ACDEBCE0079B1B8 /* Images.xcassets */,
 				C29B0A351ACDEBCE0079B1B8 /* LaunchScreen.xib */,
@@ -219,7 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23175E01AE474D60012E771 /* HomeModel.m in Sources */,
+				C23175E91AE475360012E771 /* protoCellTableViewCell.m in Sources */,
+				C23175E81AE475360012E771 /* NewReportViewController.m in Sources */,
+				C23175E31AE475130012E771 /* Location.m in Sources */,
 				C29B0A2F1ACDEBCE0079B1B8 /* ViewController.m in Sources */,
+				C23175EC1AE475500012E771 /* ReportsTableViewController.m in Sources */,
 				C29B0A2C1ACDEBCE0079B1B8 /* AppDelegate.m in Sources */,
 				C29B0A291ACDEBCE0079B1B8 /* main.m in Sources */,
 			);
@@ -344,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "WS MySQL/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "WS MySQL/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +444,7 @@
 				C29B0A481ACDEBCE0079B1B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C29B0A491ACDEBCE0079B1B8 /* Build configuration list for PBXNativeTarget "WS MySQLTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +453,7 @@
 				C29B0A4B1ACDEBCE0079B1B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
