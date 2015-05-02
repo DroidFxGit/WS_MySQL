@@ -7,11 +7,9 @@
 //
 
 #import "LoginScreenViewController.h"
+#import "UIActivityIndicatorViewWithText.h"
 
 @interface LoginScreenViewController ()
-
-//@property (nonatomic, assign) BOOL willLogin;
-//[self willLogin:YES];
 
 
 @end
@@ -22,19 +20,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIView *paddingUser = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
+    [userTextField setLeftView:paddingUser];
+    [userTextField setLeftViewMode:UITextFieldViewModeAlways];
+    
+    UIView *paddingPass = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
+    [passTextField setLeftView:paddingPass];
+    [passTextField setLeftViewMode:UITextFieldViewModeAlways];
+    
+    userTextField.delegate = self;
+    passTextField.delegate = self;
+    
+    [userTextField addTarget:self action:@selector(nextTexFieldFocus:) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [passTextField addTarget:self action:@selector(textFieldDidReturn:) forControlEvents:UIControlEventEditingDidEndOnExit];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    
-    
-    
-}
 
 
 - (void) alertStatus:(NSString *)msg :(NSString *)title :(int) tag {
@@ -61,6 +68,12 @@
 
 - (IBAction)loginActionCall:(id)sender {
     
+    [self loginByResponse];
+
+}
+
+- (void)loginByResponse
+{
     NSInteger success = 0;
     @try {
         
@@ -135,12 +148,40 @@
         [self alertStatus:@"Sign in Failed." :@"Error!" :0];
     }
     if (success) {
-        [self performSegueWithIdentifier:@"login_success" sender:self];
+        
+        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        spinner.frame = CGRectMake((self.view.frame.size.width - 100) / 2, (self.view.frame.size.height - 100) / 2, 100, 100);
+        spinner.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+        spinner.layer.cornerRadius = 100 * 0.1;
+        [self.view addSubview:spinner];
+        [spinner startAnimating];
+        
+        
+        double delayInSeconds = 2.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [spinner stopAnimating];
+            [self performSegueWithIdentifier:@"login_success" sender:self];
+            
+        });
+        
     }
-
-
     
 }
+
+
+
+- (void)nextTexFieldFocus:(UITextField *)textField
+{
+    [passTextField becomeFirstResponder];
+}
+
+- (void)textFieldDidReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    [self loginByResponse];
+}
+
 
 
 

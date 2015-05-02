@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginScreenViewController : UIViewController
+@interface LoginScreenViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *userTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passTextField;
+
+@property (strong, nonatomic) UIActivityIndicatorView *loadingIndicator;
+
 
 - (IBAction)loginActionCall:(id)sender;
 

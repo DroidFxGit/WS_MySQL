@@ -44,7 +44,7 @@
     //set obtained coordinates in an NSArray
     dataLocation = [self getLocationWithData:location];
     
-    [locationManager stopUpdatingLocation];
+    //dem[locationManager stopUpdatingLocation];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -141,6 +141,7 @@
             }
             else {
                 [self ShowAlerViewWithMessage:@"Listo!!" Message:@"Su reporte ha sido enviado, en breve recibirá respuesta"];
+                [locationManager stopUpdatingLocation];
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
             

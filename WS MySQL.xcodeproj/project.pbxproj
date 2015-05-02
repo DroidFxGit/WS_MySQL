@@ -13,6 +13,8 @@
 		C23175E81AE475360012E771 /* NewReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175E51AE475360012E771 /* NewReportViewController.m */; };
 		C23175E91AE475360012E771 /* protoCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175E71AE475360012E771 /* protoCellTableViewCell.m */; };
 		C23175EC1AE475500012E771 /* ReportsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23175EB1AE475500012E771 /* ReportsTableViewController.m */; };
+		C23EF47E1AF08EFF0044E6FE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C23EF47D1AF08EFF0044E6FE /* logo.png */; };
+		C23EF4811AF0A3140044E6FE /* UIActivityIndicatorViewWithText.m in Sources */ = {isa = PBXBuildFile; fileRef = C23EF4801AF0A3140044E6FE /* UIActivityIndicatorViewWithText.m */; };
 		C29B0A291ACDEBCE0079B1B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B0A281ACDEBCE0079B1B8 /* main.m */; };
 		C29B0A2C1ACDEBCE0079B1B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B0A2B1ACDEBCE0079B1B8 /* AppDelegate.m */; };
 		C29B0A2F1ACDEBCE0079B1B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B0A2E1ACDEBCE0079B1B8 /* ViewController.m */; };
@@ -45,6 +47,9 @@
 		C23175E71AE475360012E771 /* protoCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = protoCellTableViewCell.m; sourceTree = "<group>"; };
 		C23175EA1AE475500012E771 /* ReportsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportsTableViewController.h; sourceTree = "<group>"; };
 		C23175EB1AE475500012E771 /* ReportsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportsTableViewController.m; sourceTree = "<group>"; };
+		C23EF47D1AF08EFF0044E6FE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C23EF47F1AF0A3140044E6FE /* UIActivityIndicatorViewWithText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIActivityIndicatorViewWithText.h; sourceTree = "<group>"; };
+		C23EF4801AF0A3140044E6FE /* UIActivityIndicatorViewWithText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIActivityIndicatorViewWithText.m; sourceTree = "<group>"; };
 		C29B0A231ACDEBCE0079B1B8 /* WS MySQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WS MySQL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29B0A271ACDEBCE0079B1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C29B0A281ACDEBCE0079B1B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +104,7 @@
 		C29B0A251ACDEBCE0079B1B8 /* WS MySQL */ = {
 			isa = PBXGroup;
 			children = (
+				C23EF47D1AF08EFF0044E6FE /* logo.png */,
 				C29B0A2A1ACDEBCE0079B1B8 /* AppDelegate.h */,
 				C29B0A2B1ACDEBCE0079B1B8 /* AppDelegate.m */,
 				C23175DE1AE474D60012E771 /* HomeModel.h */,
@@ -116,6 +122,8 @@
 				C29B0A301ACDEBCE0079B1B8 /* Main.storyboard */,
 				C210A2BB1AEF3A7800D0D380 /* LoginScreenViewController.h */,
 				C210A2BC1AEF3A7800D0D380 /* LoginScreenViewController.m */,
+				C23EF47F1AF0A3140044E6FE /* UIActivityIndicatorViewWithText.h */,
+				C23EF4801AF0A3140044E6FE /* UIActivityIndicatorViewWithText.m */,
 				C29B0A331ACDEBCE0079B1B8 /* Images.xcassets */,
 				C29B0A351ACDEBCE0079B1B8 /* LaunchScreen.xib */,
 				C29B0A261ACDEBCE0079B1B8 /* Supporting Files */,
@@ -229,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23EF47E1AF08EFF0044E6FE /* logo.png in Resources */,
 				C29B0A321ACDEBCE0079B1B8 /* Main.storyboard in Resources */,
 				C29B0A371ACDEBCE0079B1B8 /* LaunchScreen.xib in Resources */,
 				C29B0A341ACDEBCE0079B1B8 /* Images.xcassets in Resources */,
@@ -253,6 +262,7 @@
 				C23175E91AE475360012E771 /* protoCellTableViewCell.m in Sources */,
 				C23175E81AE475360012E771 /* NewReportViewController.m in Sources */,
 				C23175E31AE475130012E771 /* Location.m in Sources */,
+				C23EF4811AF0A3140044E6FE /* UIActivityIndicatorViewWithText.m in Sources */,
 				C29B0A2F1ACDEBCE0079B1B8 /* ViewController.m in Sources */,
 				C210A2BD1AEF3A7800D0D380 /* LoginScreenViewController.m in Sources */,
 				C23175EC1AE475500012E771 /* ReportsTableViewController.m in Sources */,
